@@ -1,5 +1,6 @@
 logins = {'Vinicius': '123', 'Gabriel': '456', 'Beatriz': '1234','Jon Vlogs': '123'}
 
+
 disciplinas = {'Vinicius': [['Iniciativa Vingadores' , '18/01/2010' , 'Nick Fury' ]],
                'Gabriel': [['Fisioculturismo', '5/5/2024', 'Sheviii2k']],
                'Beatriz': [['Bia Vlogs', '20/08/2019', 'Pink Mouth']]}

@@ -6,6 +6,7 @@ from bdsimulado import *
 app = Flask(__name__)
 
 # Rota para /
+
 @app.route('/')
 def principal():
     return render_template('index.html')
