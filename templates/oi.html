@@ -7,13 +7,13 @@
 <body>
     <h1>Bem vindo {{nome}}</h1>
 
-    <table border="1">
-        <tr>
+        <table border="1">
+            <tr>
             <td>Nome do projeto</td>
             <td>Data Final </td>
             <td>Gerente </td>
 
-        </tr>
+            </tr>
         {% for disciplina in disciplinas %}
             <tr>
                 <td><a href="/detalhar/{{disciplina[0]}}">{{disciplina[0]}}</a></td>
@@ -23,6 +23,6 @@
             </tr>
         {% endfor %}
 
-    </table>
+        </table>
 </body>
 </html>

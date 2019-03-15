@@ -17,6 +17,7 @@ def login():
         login = request.form.get('login')
         senha = request.form.get('senha')
 
+
         # Verificar a senha
         if validar_login(login, senha):
             return render_template('oi.html', nome=login, disciplinas=get_disciplinas(login))
