@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{atividade}}</title>
+
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Projeto</td>
+            <td>Data de inicio </td>
+            <td>Gerente </td>
+
+        </tr>
+       {% for det in detalhe %}
+            <tr>
+                <td>{{det[0]}}</td>
+                <td>{{det[1]}}</td>
+                <td>{{det[2]}}</td>
+
+            </tr>
+       {% endfor %}
+    </table>
+
+    <table border="10">
+        <tr>
+            <td>Nome</td>>
+            <td>Detalhando</td>>
+            <td>Data Inicio/Final</td>
+            <td>Responsavel</td>
+        {% for detail in detativ %}
+            </tr>
+        <tr>
+            <td>{{detail[0]}}</td>
+            <td>{{detail[1]}}</td>
+            <td>{{detail[2]}}</td>
+            <td>{{detail[3]}}</td>>
+        </tr>>
+       {% endfor %}
+    </table>
+</body>
+</html>
