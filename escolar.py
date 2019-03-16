@@ -33,8 +33,6 @@ def login():
 def detalhar(disciplina):
     return render_template('disciplina.html', disciplina = disciplina, detalhe=get_detalhes(disciplina), detativ=get_detativ(disciplina))
 
-def detatividade(deta):
-    return render_template()
 
 # Rodando a app
 if __name__ == '__main__':

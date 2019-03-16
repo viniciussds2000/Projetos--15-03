@@ -6,11 +6,11 @@
 
 </head>
 <body>
-    <table border="1">
+    <table border="1" width="600">
         <tr>
             <td>Projeto</td>
             <td>Data de inicio </td>
-            <td>Gerente </td>
+            <td>Data Final </td>
 
 
         </tr>
@@ -24,14 +24,17 @@
        {% endfor %}
     </table>
 
-    <table border="10">
-        <tr>
-            <td>Nome</td>>
-            <td>Detalhando</td>>
-            <td>Data Inicio/Final</td>
-            <td>Responsavel</td>
-        {% for detail in detativ %}
-            </tr>
+    <table border="6", width="600">
+        <thead>
+            <tr>
+                <th>Nome</th>>
+                <th>Detalhando</th>>
+                <th>Data Inicio/Final</th>
+                <th>Responsavel</th>
+            {% for detail in detativ %}
+                </tr>
+
+                </thead>
         <tr>
             <td>{{detail[0]}}</td>
             <td>{{detail[1]}}</td>
