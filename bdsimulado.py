@@ -18,8 +18,7 @@ detativ={'Iniciativa Vingadores':[['Os Vingadores','A Iniciativa Vingadores'
                                                    'que sejam grandes demais para serem lidadas na Terra. ','25/04/1995 - 18/01/2010','Nicholas J. Fury']],
          'Fisioculturismo':[['Fisiocultismo Arnold Ohio','blablablabla blablablablabla blablablablabla bla'
                              'blablablabla blablablablabla blablablablabla bla'
-                             'blablablabla blablablablabla blablablablabla bla'
-                             'blablablabla blablablablabla blablablablabla bla'
+                             'ablablablabla bla'
                              'blablablabla blablablablabla blablablablabla bla','05/05/2018 - 05/05/2024','Sheviii2k']],
 
          'Bia Vlogs':[['Bia Vlogs','blablablablablablablabalblablablablablabla'
