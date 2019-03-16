@@ -5,6 +5,8 @@ disciplinas = {'Vinicius': [['Iniciativa Vingadores' , '18/01/2010' , 'Nick Fury
                'Gabriel': [['Fisioculturismo', '5/5/2024', 'Sheviii2k']],
                'Beatriz': [['Bia Vlogs', '20/08/2019', 'Pink Mouth']]}
 
+
+
 detalhes = {'Iniciativa Vingadores': [['Iniciativa Vingadores','25/04/1995','18/01/2010']],
             'Fisioculturismo': [['Arnold Ohio','05/05/2018','5/5/2024']],
               'Bia Vlogs':[['Bia Vlogs','11/05/2018','20/08/19']]}
