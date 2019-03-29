@@ -19,6 +19,7 @@ app.config['MYSQL_DATABASE_DB'] = 'escolar'
 
 # Rota para /
 
+
 @app.route('/')
 def principal():
     return render_template('index.html')
