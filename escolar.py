@@ -1,9 +1,21 @@
 # Importando bibliotecas
 from flask import Flask, request, render_template
+from flaskext.mysql import MySQL
+from bd import *
 from bdsimulado import *
 
 # Instanciando a app Flask
 app = Flask(__name__)
+
+
+mysql = MySQL()
+mysql.init_app(app)
+
+#configurando acesso ao MySQL
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
+app.config['MYSQL_DATABASE_DB'] = 'escolar'
+
 
 # Rota para /
 
@@ -18,12 +30,19 @@ def login():
         login = request.form.get('login')
         senha = request.form.get('senha')
 
+        cursor = mysql.get_db().cursor()
+
+        #obter o idlogin
+        idlogin = get_idlogin(cursor,login,senha)
 
         # Verificar a senha
-        if validar_login(login, senha):
-            return render_template('oi.html', nome=login, disciplinas=get_disciplinas(login))
-        else:
+        if idlogin is None:
             return render_template('index.html', erro='Login/senha incorretos!')
+        else:
+
+            return render_template('oi.html', nome=login, disciplinas=get_disciplinas(cursor,idlogin))
+
+
 
     else:
         return render_template('index.html', erro='Método incorreto. Use POST!')

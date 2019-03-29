@@ -1,9 +1,4 @@
-logins = {'Vinicius': '123', 'Gabriel': '456', 'Beatriz': '1234','Jon Vlogs': '123'}
 
-
-disciplinas = {'Vinicius': [['Iniciativa Vingadores' , '18/01/2010' , 'Nick Fury' ]],
-               'Gabriel': [['Fisioculturismo', '5/5/2024', 'Sheviii2k']],
-               'Beatriz': [['Bia Vlogs', '20/08/2019', 'Pink Mouth']]}
 
 detalhes = {'Iniciativa Vingadores': [['Iniciativa Vingadores','25/04/1995','18/01/2010']],
             'Fisioculturismo': [['Arnold Ohio','05/05/2018','5/5/2024']],
@@ -26,11 +21,7 @@ detativ={'Iniciativa Vingadores':[['Os Vingadores','A Iniciativa Vingadores '
                                    'blablablabla blablablablabla blablablablabla bla'
                                    'blablablabla blablablablabla blablablablabla bla','11/05/2018 - 20/08/2019','Boca Rosa']]}
 
-def validar_login(login, senha):
-    return (login in logins) and (logins[login] == senha)
 
-def get_disciplinas(login):
-    return disciplinas[login]
 
 def get_detalhes(disciplina):
     return detalhes[disciplina]
